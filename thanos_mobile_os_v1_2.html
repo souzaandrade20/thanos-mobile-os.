@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101827">
+<title>THANOS MOBILE OS — V1.2</title>
+<style>
+:root{color-scheme:dark;--bg:#070d18;--panel:#101c2e;--line:#263b56;--text:#f3f7ff;--muted:#9eb0c8;--blue:#7cc4ff;--blue2:#b8e0ff;--green:#8bf0c9;--glow:rgba(56,150,255,.16)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#142d4b 0%,var(--bg) 52%);color:var(--text);font:15px/1.5 system-ui,-apple-system,Roboto,sans-serif;min-height:100vh}
+header{padding:26px 16px 14px;max-width:760px;margin:auto}.eyebrow{font-size:10px;font-weight:900;letter-spacing:.16em;color:var(--blue);text-transform:uppercase}h1{font-size:clamp(25px,7vw,34px);line-height:1.08;letter-spacing:-.04em;margin:8px 0;background:linear-gradient(100deg,#fff,#9dcfff);-webkit-background-clip:text;background-clip:text;color:transparent}header p,.muted{color:var(--muted)}header p{font-size:14px;margin:9px 0 0}.wrap{max-width:760px;padding:0 12px 32px;margin:auto}.status,.card{background:linear-gradient(145deg,rgba(18,33,54,.98),rgba(12,23,39,.98));border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:12px;box-shadow:0 10px 28px rgba(0,0,0,.12)}.status{border-color:#315277;background:linear-gradient(120deg,#102b47,#0d1a2b)}.status-top{display:flex;align-items:center;gap:9px;margin-bottom:5px}.status strong{font-size:12px;letter-spacing:.08em}.status small{color:var(--muted);font-size:12px}.live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 12px rgba(139,240,201,.55)}.free-pill{margin-left:auto;border:1px solid #326c68;border-radius:999px;color:var(--green);font-size:9px;font-weight:900;padding:3px 7px;letter-spacing:.08em}nav{display:flex;gap:7px;overflow-x:auto;padding:5px 0 14px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav button{white-space:nowrap;border:1px solid #2b405a;border-radius:999px;padding:10px 13px;background:#101d30;color:#c8d7e9;font-size:13px;font-weight:700}nav button.active{background:linear-gradient(110deg,#b8e0ff,#78bdff);color:#071426;border-color:#a8d8ff;box-shadow:0 4px 16px var(--glow)}.view{display:none}.view.active{display:block}h2{font-size:18px;letter-spacing:-.02em;margin:5px 0 7px}.card p{margin:0 0 12px;color:var(--muted);font-size:13px}label{display:block;margin:12px 0 5px;font-weight:750;font-size:13px}input,textarea,select{display:block;width:100%;padding:13px 12px;border-radius:12px;border:1px solid #3a526e;background:#091321;color:white;font:inherit;margin:0 0 10px;outline:none}input:focus,textarea:focus,select:focus{border-color:var(--blue);box-shadow:0 0 0 3px var(--glow)}input::placeholder,textarea::placeholder{color:#8295ad}.btn{display:inline-block;border:0;border-radius:12px;background:linear-gradient(110deg,#c2e5ff,#7cc4ff);color:#061326;padding:13px 15px;font-weight:850;font-size:14px;text-decoration:none;cursor:pointer}.btn.secondary{background:#172b43;color:white;border:1px solid #38526f}.row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1}.grid{display:grid;grid-template-columns:1fr;gap:0}.metric{font-size:25px;font-weight:850;letter-spacing:-.04em}.hint{font-size:12px;color:var(--muted)}.notice{padding:12px;border-radius:13px;background:#0d2928;border:1px solid #245e57;color:#cffff1;margin-top:10px;font-size:13px}.item{padding:12px 0;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0}.task{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.task input{width:22px;min-width:22px;height:22px;margin:1px 0;accent-color:#a8d2ff}.task span{flex:1}.task.done span{text-decoration:line-through;color:var(--muted)}.foot{text-align:center;font-size:11px;color:#70839c;padding:20px 4px}.quick-card{padding:15px}.quick-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}.quick-head h2{margin-bottom:0}.quick-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.quick-link{display:flex;min-width:0;flex-direction:column;gap:4px;padding:12px 9px;border:1px solid #2c4563;border-radius:14px;background:linear-gradient(145deg,#172b43,#0d192a);text-decoration:none;color:var(--text)}.quick-link span{font-size:21px;color:var(--blue);margin-bottom:3px}.quick-link strong{font-size:12px;overflow-wrap:anywhere}.quick-link small{font-size:10px;color:var(--muted)}
+@media(min-width:600px){.grid.two{grid-template-columns:1fr 1fr;gap:12px}.grid.two .card{margin-bottom:0}}
+</style>
+</head>
+<body>
+<header>
+ <div class="eyebrow">THANOS SYSTEM · VERSÃO 1.2</div>
+ <h1>THANOS MOBILE OS</h1>
+ <p>Seu painel para foco, projetos e decisões no Redmi Note 14.</p>
+</header>
+<main class="wrap">
+ <div class="status"><div class="status-top"><span class="live-dot"></span><strong>PAINEL OPERACIONAL</strong><span class="free-pill">GRATUITO</span></div><small>Execução local no navegador · sem root · sem conta bancária conectada. Não altera o sistema Android diretamente.</small></div>
+ <nav aria-label="Seções">
+  <button class="active" data-view="home">⌂ Painel</button><button data-view="focus">✓ Rotina</button><button data-view="projects">▦ Projetos</button><button data-view="finance">R$ Financeiro</button><button data-view="setup">↗ Backup</button>
+ </nav>
+ <section id="home" class="view active">
+  <div class="card quick-card"><div class="quick-head"><div><div class="eyebrow">ACESSO RÁPIDO</div><h2>Ferramentas</h2></div><span class="hint">Atalhos web</span></div><div class="quick-links"><a class="quick-link" href="https://chatgpt.com/" target="_blank" rel="noopener"><span>✳</span><strong>ChatGPT</strong><small>Planejar e executar</small></a><a class="quick-link" href="https://web.whatsapp.com/" target="_blank" rel="noopener"><span>◉</span><strong>WhatsApp Web</strong><small>Mensagens</small></a><a class="quick-link" href="https://www.google.com/" target="_blank" rel="noopener"><span>⌕</span><strong>Pesquisar</strong><small>Buscar na web</small></a></div></div>
+  <div class="grid two">
+   <div class="card">
+    <div class="eyebrow">01 · FOCO</div><h2>🎯 Prioridade de hoje</h2><p>Uma entrega principal. Evite abrir várias frentes ao mesmo tempo.</p>
+    <label for="priority">Minha prioridade</label><input id="priority" placeholder="Ex.: concluir uma entrega para cliente" maxlength="140">
+    <button class="btn" id="savePriority">Salvar prioridade</button>
+   </div>
+   <div class="card">
+    <div class="eyebrow">02 · EXECUÇÃO</div><h2>➡️ Próxima ação</h2><p>Transforme a prioridade em uma ação pequena e concreta.</p>
+    <label for="nextAction">Próximo passo</label><input id="nextAction" placeholder="Ex.: revisar a página do produto" maxlength="140">
+    <button class="btn" id="saveAction">Salvar próxima ação</button>
+   </div>
+   <div class="card">
+    <div class="eyebrow">03 · ASSISTÊNCIA</div><h2>🧠 Central de IA</h2><p>Abra o ChatGPT para planejar, revisar e executar a tarefa escolhida.</p><a class="btn" href="https://chatgpt.com/" target="_blank" rel="noopener">Abrir ChatGPT ↗</a>
+   </div>
+   <div class="card">
+    <div class="eyebrow">04 · VISÃO GERAL</div><h2>📊 Resumo</h2><div class="row"><div><div class="metric" id="doneCount">0</div><div class="hint">feitas</div></div><div><div class="metric" id="openCount">0</div><div class="hint">pendentes</div></div><div><div class="metric" id="projectCount">0</div><div class="hint">projetos</div></div></div>
+   </div>
+  </div>
+  <div id="statusMessage" class="notice" role="status">Painel aberto. Preencha uma prioridade e toque em “Salvar prioridade”.</div>
+ </section>
+ <section id="focus" class="view">
+  <div class="card"><h2>Checklist diário</h2><p>Marque os itens que concluiu.</p><div id="tasks"></div>
+   <label for="newTask">Nova tarefa</label><input id="newTask" placeholder="Digite uma tarefa" maxlength="140"><button class="btn" id="addTask">Adicionar tarefa</button>
+  </div>
+ </section>
+ <section id="projects" class="view">
+  <div class="card"><h2>Projetos</h2><p>Registre cada projeto e sua próxima ação.</p>
+   <label for="projectName">Nome do projeto</label><input id="projectName" placeholder="Ex.: De Tabela Sports" maxlength="80">
+   <label for="projectStep">Próxima ação</label><input id="projectStep" placeholder="Ex.: revisar produtos da loja" maxlength="140">
+   <button class="btn" id="addProject">Salvar projeto</button><div id="projectList"></div>
+  </div>
+ </section>
+ <section id="finance" class="view">
+  <div class="card"><h2>Financeiro simples</h2><p>Registro manual; não há conexão bancária.</p>
+   <label for="entryDesc">Descrição</label><input id="entryDesc" placeholder="Ex.: ferramenta" maxlength="100">
+   <label for="entryAmount">Valor (R$)</label><input id="entryAmount" type="number" inputmode="decimal" min="0.01" step="0.01" placeholder="0,00">
+   <label for="entryType">Tipo</label><select id="entryType"><option value="despesa">Despesa</option><option value="receita">Receita</option></select>
+   <button class="btn" id="addEntry">Registrar lançamento</button>
+   <div class="row" style="margin-top:16px"><div><div class="hint">Receitas</div><div class="metric" id="incomeTotal">R$ 0,00</div></div><div><div class="hint">Despesas</div><div class="metric" id="expenseTotal">R$ 0,00</div></div></div><div id="entryList"></div>
+  </div>
+ </section>
+ <section id="setup" class="view">
+  <div class="card"><h2>Backup e armazenamento</h2><p>Os dados tentam ficar salvos neste navegador. Se o navegador bloquear o armazenamento, exporte um backup regularmente.</p>
+   <button class="btn" id="exportData">Exportar backup</button>
+   <label for="importFile">Restaurar backup JSON</label><input id="importFile" type="file" accept="application/json">
+   <p class="hint">Não coloque senhas, códigos de autenticação ou dados bancários confidenciais aqui.</p>
+  </div>
+ </section>
+ <div class="foot">THANOS MOBILE OS V1.2 · painel local gratuito</div>
+</main>
+<script>
+const KEY='thanos_mobile_os_v11';
+const baseTasks=['Definir a prioridade principal','Executar uma tarefa importante','Responder mensagens profissionais','Registrar valores confirmados','Escolher o próximo passo'];
+let data={priority:'',nextAction:'',tasks:baseTasks.map((text,i)=>({id:i+1,text,done:false})),projects:[],entries:[]};
+let storageWorks=true;
+try{const saved=localStorage.getItem(KEY);if(saved)data={...data,...JSON.parse(saved)}}catch(e){storageWorks=false}
+function message(t){const el=document.getElementById('statusMessage');if(el)el.textContent=t}
+function persist(note='Alterações guardadas neste navegador.'){
+ try{localStorage.setItem(KEY,JSON.stringify(data));storageWorks=true;message(note)}catch(e){storageWorks=false;message('O navegador não permitiu guardar os dados. Use “Backup” e exporte um arquivo.')}
+ render()}
+function money(n){return Number(n||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
+function addItem(parent, title, detail, remove){const d=document.createElement('div');d.className='item';const b=document.createElement('strong');b.textContent=title;d.append(b);if(detail){const p=document.createElement('p');p.className='hint';p.textContent=detail;d.append(p)}if(remove){const x=document.createElement('button');x.className='btn secondary';x.textContent='Remover';x.onclick=remove;d.append(x)}parent.append(d)}
+function render(){
+ const p=document.getElementById('priority'),a=document.getElementById('nextAction');if(p)p.value=data.priority||'';if(a)a.value=data.nextAction||'';
+ document.getElementById('doneCount').textContent=data.tasks.filter(t=>t.done).length;document.getElementById('openCount').textContent=data.tasks.filter(t=>!t.done).length;document.getElementById('projectCount').textContent=data.projects.length;
+ const tasks=document.getElementById('tasks');tasks.innerHTML='';data.tasks.forEach(t=>{const d=document.createElement('div');d.className='task'+(t.done?' done':'');const c=document.createElement('input');c.type='checkbox';c.checked=!!t.done;c.setAttribute('aria-label','Concluir '+t.text);c.onchange=()=>{t.done=c.checked;persist('Checklist atualizado.')};const s=document.createElement('span');s.textContent=t.text;d.append(c,s);tasks.append(d)});
+ const pl=document.getElementById('projectList');pl.innerHTML='';data.projects.forEach((p,i)=>addItem(pl,p.name,'Próxima ação: '+p.step,()=>{data.projects.splice(i,1);persist('Projeto removido.')} ));
+ const income=data.entries.filter(e=>e.type==='receita').reduce((s,e)=>s+e.amount,0),expense=data.entries.filter(e=>e.type==='despesa').reduce((s,e)=>s+e.amount,0);document.getElementById('incomeTotal').textContent=money(income);document.getElementById('expenseTotal').textContent=money(expense);
+ const el=document.getElementById('entryList');el.innerHTML='';data.entries.forEach((e,i)=>addItem(el,e.desc+' · '+money(e.amount),e.type==='receita'?'Receita':'Despesa',()=>{data.entries.splice(i,1);persist('Lançamento removido.')}))
+}
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===b.dataset.view));window.scrollTo(0,0)});
+document.getElementById('savePriority').onclick=()=>{data.priority=document.getElementById('priority').value.trim();persist(data.priority?'Prioridade salva neste navegador.':'Campo de prioridade limpo.');};
+document.getElementById('saveAction').onclick=()=>{data.nextAction=document.getElementById('nextAction').value.trim();persist(data.nextAction?'Próxima ação salva neste navegador.':'Campo de próxima ação limpo.');};
+document.getElementById('addTask').onclick=()=>{const x=document.getElementById('newTask'),v=x.value.trim();if(!v){message('Digite uma tarefa antes de adicionar.');return}data.tasks.push({id:Date.now(),text:v,done:false});x.value='';persist('Tarefa adicionada.')};
+document.getElementById('addProject').onclick=()=>{const n=document.getElementById('projectName'),s=document.getElementById('projectStep');if(!n.value.trim()||!s.value.trim()){message('Preencha o nome do projeto e a próxima ação.');return}data.projects.push({name:n.value.trim(),step:s.value.trim()});n.value='';s.value='';persist('Projeto registrado.')};
+document.getElementById('addEntry').onclick=()=>{const d=document.getElementById('entryDesc'),a=document.getElementById('entryAmount'),t=document.getElementById('entryType'),amount=Number(a.value);if(!d.value.trim()||!Number.isFinite(amount)||amount<=0){message('Informe a descrição e um valor maior que zero.');return}data.entries.push({desc:d.value.trim(),amount,type:t.value});d.value='';a.value='';persist('Lançamento registrado.')};
+document.getElementById('exportData').onclick=()=>{const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='thanos-mobile-os-backup.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);message('Backup preparado. Confira a pasta Downloads.')};
+document.getElementById('importFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d||!Array.isArray(d.tasks)||!Array.isArray(d.projects)||!Array.isArray(d.entries))throw Error();if(confirm('Substituir os dados atuais pelo backup selecionado?')){data={...data,...d};persist('Backup importado.')}}catch(err){message('Não foi possível ler esse backup. Selecione um JSON exportado pelo painel.')}e.target.value=''};
+render();
+if(!storageWorks)message('Aviso: o navegador não liberou o armazenamento. Use Backup para exportar os dados.');
+</script>
+</body>
+</html>
